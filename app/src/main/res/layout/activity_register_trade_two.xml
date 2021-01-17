@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".ui.register_trade.form1.RegisterTradeOneActivity">
+
+    <include layout="@layout/header_register_trade_layout" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="15dp">
+
+
+            <EditText
+                android:id="@+id/edtPincode"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/custom_input"
+                android:drawablePadding="12dp"
+                android:ems="10"
+                android:maxLength="6"
+                android:hint="Pincode"
+                android:inputType="number"
+                android:padding="10dp"
+                android:textSize="@dimen/app_text_size" />
+
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/custom_input"
+                android:drawablePadding="12dp"
+                android:ems="10"
+                android:id="@+id/edtState"
+                android:hint="State"
+                android:inputType="textPersonName"
+                android:padding="10dp"
+                android:textSize="@dimen/app_text_size" />
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/custom_input"
+                android:drawablePadding="12dp"
+                android:id="@+id/edtDistrict"
+                android:ems="10"
+                android:hint="District"
+                android:inputType="textPersonName"
+                android:padding="10dp"
+                android:textSize="@dimen/app_text_size" />
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:gravity="top"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/custom_input"
+                android:drawablePadding="12dp"
+                android:id="@+id/edtOperatingAddress"
+                android:ems="10"
+
+                android:hint="Operating Address"
+                android:inputType="textPersonName"
+                android:padding="10dp"
+                android:textSize="@dimen/app_text_size" />
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:gravity="top"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/custom_input"
+                android:drawablePadding="12dp"
+                android:ems="10"
+                android:hint="Registered Address"
+                android:id="@+id/edtRegistedAddress"
+                android:inputType="textPersonName"
+                android:padding="10dp"
+                android:textSize="@dimen/app_text_size" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:gravity="top"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/custom_input"
+                android:drawablePadding="12dp"
+                android:ems="10"
+                android:hint="Address 2"
+                android:id="@+id/edtAddress2"
+                android:inputType="textPersonName"
+                android:padding="10dp"
+                android:textSize="@dimen/app_text_size" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/custom_input"
+                android:drawablePadding="12dp"
+                android:ems="10"
+                android:hint="Company pan number"
+                android:id="@+id/edtCompPanNumber"
+                android:inputType="textPersonName"
+                android:maxLength="10"
+                android:padding="10dp"
+                android:textSize="@dimen/app_text_size" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/custom_input"
+                android:drawablePadding="12dp"
+                android:ems="10"
+                android:hint="Aadhaar number"
+                android:maxLength="12"
+                android:id="@+id/edtAadhaarNumber"
+                android:inputType="number"
+                android:padding="10dp"
+                android:textSize="@dimen/app_text_size" />
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="#7A000000"
+                android:layout_marginTop="18sp"
+                android:text="Any Ligigation"
+                />
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Yes"
+                    android:layout_marginLeft="20dp"
+
+                    android:checked="true"
+                    android:textColor="@color/black_80"
+                    android:textSize="14sp" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No"
+                    android:layout_marginLeft="20dp"
+
+                    android:textColor="@color/black_80"
+                    android:textSize="14sp" />
+
+            </RadioGroup>
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnNext"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:shadowColor="@color/darkGray"
+                android:shadowRadius="10"
+                android:text="Next"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </ScrollView>
+</androidx.appcompat.widget.LinearLayoutCompat>

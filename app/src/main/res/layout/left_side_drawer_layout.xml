@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#262D35"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:clickable="true"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:id="@+id/profileEditDrawerLLayout"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="15dp"
+            android:paddingRight="5dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imgUser"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+              app:civ_border_color="@color/white"
+                app:civ_border_width="1dp"
+                android:src="@drawable/ic_default_user"
+               />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/drawerUserNameTView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="User Name"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/drawerUserNameMobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="User Name"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/white"
+                    android:textSize="13sp" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:orientation="vertical"
+            android:paddingRight="20dp">
+
+
+            
+            <LinearLayout
+                
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+
+                android:orientation="horizontal"
+                android:layout_marginTop="8dp"
+                android:padding="@dimen/left_menu_content_padding">
+
+                <ImageView
+                    android:layout_width="@dimen/left_menu_icon_size"
+                    android:layout_height="@dimen/left_menu_icon_size"
+                    android:src="@drawable/ic_user"
+                    app:tint="@color/left_menu_icon_color" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Profile"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/left_menu_text_size"
+                    android:textStyle="normal" />
+            </LinearLayout>
+
+            
+            <LinearLayout
+                
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+
+                android:orientation="horizontal"
+                android:padding="@dimen/left_menu_content_padding">
+
+                <ImageView
+                    android:layout_width="@dimen/left_menu_icon_size"
+                    android:layout_height="@dimen/left_menu_icon_size"
+                    android:src="@drawable/ic_mylisting"
+                    app:tint="@color/left_menu_icon_color" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="My Listings"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/left_menu_text_size"
+                    android:textStyle="normal" />
+            </LinearLayout>
+
+            
+            <LinearLayout
+                
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+
+                android:orientation="horizontal"
+                android:padding="@dimen/left_menu_content_padding">
+
+                <ImageView
+                    android:layout_width="@dimen/left_menu_icon_size"
+                    android:layout_height="@dimen/left_menu_icon_size"
+                    android:src="@drawable/ic_bidding"
+                    app:tint="@color/left_menu_icon_color" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="My Bids"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/left_menu_text_size"
+                    android:textStyle="normal" />
+            </LinearLayout>
+
+            
+            <LinearLayout
+                
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+
+                android:orientation="horizontal"
+                android:padding="@dimen/left_menu_content_padding">
+
+                <ImageView
+                    android:layout_width="@dimen/left_menu_icon_size"
+                    android:layout_height="@dimen/left_menu_icon_size"
+                    android:src="@drawable/ic_tutorials"
+                    app:tint="@color/left_menu_icon_color" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tutorials"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/left_menu_text_size"
+                    android:textStyle="normal" />
+            </LinearLayout>
+
+            
+            <LinearLayout
+                
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+
+                android:orientation="horizontal"
+                android:padding="@dimen/left_menu_content_padding">
+
+                <ImageView
+                    android:layout_width="@dimen/left_menu_icon_size"
+                    android:layout_height="@dimen/left_menu_icon_size"
+                    android:src="@drawable/ic_inbox"
+                    app:tint="@color/left_menu_icon_color" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Message Box"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/left_menu_text_size"
+                    android:textStyle="normal" />
+            </LinearLayout>
+
+            
+            <LinearLayout
+                
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+
+                android:orientation="horizontal"
+                android:padding="@dimen/left_menu_content_padding">
+
+                <ImageView
+                    android:layout_width="@dimen/left_menu_icon_size"
+                    android:layout_height="@dimen/left_menu_icon_size"
+                    android:src="@drawable/ic_terms"
+                    app:tint="@color/left_menu_icon_color" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Trade Policies"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/left_menu_text_size"
+                    android:textStyle="normal" />
+            </LinearLayout>
+
+            
+            <LinearLayout
+                
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+
+                android:orientation="horizontal"
+                android:padding="@dimen/left_menu_content_padding">
+
+                <ImageView
+                    android:layout_width="@dimen/left_menu_icon_size"
+                    android:layout_height="@dimen/left_menu_icon_size"
+                    android:src="@drawable/ic_about_us"
+                    app:tint="@color/left_menu_icon_color" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="About Us"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/left_menu_text_size"
+                    android:textStyle="normal" />
+            </LinearLayout>
+
+            
+            <LinearLayout
+                
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+
+                android:orientation="horizontal"
+                android:padding="@dimen/left_menu_content_padding">
+
+                <ImageView
+                    android:layout_width="@dimen/left_menu_icon_size"
+                    android:layout_height="@dimen/left_menu_icon_size"
+                    android:padding="1dp"
+                    android:src="@drawable/ic_customer_service"
+                    app:tint="@color/left_menu_icon_color" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Customer Care"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/left_menu_text_size"
+                    android:textStyle="normal" />
+            </LinearLayout>
+
+            
+
+            <LinearLayout
+                android:id="@+id/llRateUs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/left_menu_content_padding">
+
+                <ImageView
+                    android:layout_width="@dimen/left_menu_icon_size"
+                    android:layout_height="@dimen/left_menu_icon_size"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/ic_rate_us"
+                    app:tint="@color/colorPrimary" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rate us"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/left_menu_text_size"
+                    android:textStyle="normal" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/llLogout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/left_menu_content_padding">
+
+                <ImageView
+                    android:layout_width="@dimen/left_menu_icon_size"
+                    android:layout_height="@dimen/left_menu_icon_size"
+                    android:src="@drawable/ic_logout"
+                    app:tint="@color/left_menu_icon_color" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Logout"
+                    android:textColor="@color/white"
+                    android:layout_marginLeft="10dp"
+
+                    android:textSize="@dimen/left_menu_text_size"
+                    android:textStyle="normal" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

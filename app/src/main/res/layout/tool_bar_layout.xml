@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar_layout"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorPrimary"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            >
+
+
+            <ImageView
+                android:src="@drawable/ic_menu"
+                android:id="@+id/home"
+                android:layout_centerVertical="true"
+                android:layout_width="30dp"
+                android:padding="2dp"
+                android:layout_height="30dp"
+                android:visibility="visible"
+                app:tint="@color/white" />
+
+
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_margin="8dp"
+                android:layout_toLeftOf="@+id/notification"
+                android:layout_toRightOf="@+id/home"
+                android:text="Dashboard"
+                android:gravity="center_vertical"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:drawablePadding="20dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/app_text_size"
+                />
+
+
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="10dp"
+                android:id="@+id/notification"
+                android:visibility="visible"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_notification"
+                app:tint="@color/white" />
+
+
+
+
+
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+</LinearLayout>
