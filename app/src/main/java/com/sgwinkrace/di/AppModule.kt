@@ -36,7 +36,7 @@ object AppModule {
         okhttpClient.addInterceptor { chain ->
             val request = chain.request().newBuilder()
             val originalHttpUrl = chain.request().url
-            val url = originalHttpUrl.newBuilder().addQueryParameter("APP_KEY", "SpTka6TwrTsXl28P").build()
+            val url = originalHttpUrl.newBuilder().addQueryParameter("APP_KEY", "").build()
             request.url(url)
             val response = chain.proceed(request.build())
             return@addInterceptor response
