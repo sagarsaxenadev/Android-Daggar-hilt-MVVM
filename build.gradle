@@ -5,6 +5,7 @@ buildscript {
         google()
         jcenter()
     }
+    // dep
     dependencies {
         classpath "com.android.tools.build:gradle:4.2.0-beta03"
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
